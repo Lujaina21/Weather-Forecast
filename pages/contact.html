@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  ** Logo File ** -->
+    <link href="../imgs/logo.png" rel="Icon" />
+    <!--  ** Fontawesome File ** -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!--  ** Bootstrap File ** -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!--  ** Styling File ** -->
+    <link rel="stylesheet" href="../css/contact.css" />
+    <title>Compass Starter</title>
+  </head>
+  <body data-bs-toggle="scroll-spy">
+    <!--*********** Navbar ***********-->
+    <nav class="navbar navbar-expand-md pt-5">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><div>
+            <img
+              src="../imgs/logo.png"
+              alt="Cloud Logo"
+              class="me-2"
+              width="64"
+              height="38"
+            />
+            <div class="logo-text">
+              <h4 class="fw-bolder">Company Name</h4>
+              <small>tagline goes here</small>
+            </div>
+          </div></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#live">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#photos">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html" target="_blank"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--*********** Main Body ***********-->
+    <main class="container">
+      <div class="container">
+        <div class="breadcrumb w-100 my-5">
+          <a href="../index.html">Home</a>
+          <span class="text-white">Contact</span>
+        </div>
+      </div>
+      <div class="row mt-3 gy-3 gx-3">
+        <!-- Left Side -->
+        <div class="col-md-5">
+          <div class="inner-left overflow-hidden rounded-3 p-3 mt-3">
+            <div
+              class="map"
+              data-latitude="-6.897789"
+              data-longitude="107.621735"
+            ></div>
+            <div class="contact-info mt-2">
+              <address class="d-flex justify-content-start">
+                <img
+                  src="../imgs/icon-marker.png"
+                  alt="Location"
+                  class="me-2 text-center my-2"
+                  width="12"
+                  height="19"
+                />
+                <p>
+                  Company Name INC. <br />
+                  2803 Avenue Street, Los Angeles
+                </p>
+              </address>
+
+              <div class="d-flex justify-content-between">
+                <a href="#"
+                  ><img
+                    src="../imgs/icon-phone.png"
+                    alt="Phone"
+                    class="me-2"
+                    width="19"
+                    height="19"
+                  />+1 800 314 235</a
+                >
+
+                <a href="#"
+                  ><img
+                    src="../imgs/icon-envelope.png"
+                    alt="Email"
+                    class="me-2"
+                    width="16"
+                    height="12"
+                  />contact@companyname.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-md-6 offset-md-1">
+          <div class="inner-right">
+            <h2 class="text-white my-3">Contact Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
+              consectetur inventore ducimus, facilis, numquam id soluta omnis
+              eius recusandae nesciunt vero repellat harum cum. Nisi facilis
+              odit hic, ipsum sed!
+            </p>
+            <form>
+              <div class="container">
+                <div class="row gx-2">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="w-100 text-white"
+                      placeholder="Your name..."
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      class="w-100 text-white"
+                      placeholder="Email Address..."
+                    />
+                  </div>
+                </div>
+
+                <div class="row gx-2">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="w-100 text-white"
+                      placeholder="Company name..."
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      class="w-100 text-white"
+                      placeholder="Website..."
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <textarea
+                      name="message"
+                      placeholder="Message..."
+                      class="w-100 text-white"
+                      rows="6"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="text-white rounded-5">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--*********** Footer ***********-->
+    <footer>
+      <main class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form class="subscribe-container position-relative pt-5 w-100">
+              <input
+                type="text"
+                placeholder="Enter your email to subscribe..."
+                class="w-100 rounded-5 text-white"
+              />
+              <button
+                type="submit"
+                class="position-absolute text-white rounded-5"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="social-icons d-flex justify-content-evenly align-items-center pt-5 ps-5"
+            >
+              <a
+                href="https://www.facebook.com/"
+                class="d-flex justify-content-center align-items-center p-3 rounded-circle"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://x.com/"
+                class="d-flex justify-content-center align-items-center p-3 rounded-circle"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.google.com/"
+                class="d-flex justify-content-center align-items-center p-3 rounded-circle"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+              <a
+                href="https://www.pinterest.com/"
+                class="d-flex justify-content-center align-items-center p-3 rounded-circle"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <p class="copyright my-4 pb-5">
+          Copyright 2024. Designed by Lujaina Walid. All rights reserved
+        </p>
+      </main>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
