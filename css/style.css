@@ -1,0 +1,190 @@
+/*==================== Fonts ====================*/
+/*?== Montserrat Font ==*/
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../fonts/Montserrat/static/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url("../fonts/Montserrat/static/Montserrat-SemiBold.ttf");
+}
+
+/*?== Averia Gruesa Libre Font ==*/
+@font-face {
+  font-family: AveriaGruesaLibre-Regular;
+  src: url("../fonts/Averia_Gruesa_Libre/AveriaGruesaLibre-Regular.ttf");
+}
+
+/*==================== Color Variables ====================*/
+:root {
+  --cyan-color: #009ad8;
+  --bg-body-color: #1e202b;
+  --text-color: #bfc1c8;
+  --section-bg-color: #262936;
+}
+
+/*==================== General Styling ====================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cyan-color);
+}
+
+body {
+  font-family: Montserrat-Medium;
+  color: var(--text-color);
+  background-color: var(--bg-body-color);
+  height: 100vh;
+}
+
+button {
+  font-family: AveriaGruesaLibre-Regular;
+}
+
+/*==================== Body Styling ====================*/
+/************ Navbar ************/
+nav {
+  background-color: var(--bg-body-color);
+}
+
+nav .nav-link {
+  color: var(--text-color);
+  border: 2px solid transparent;
+  border-radius: 30px;
+  margin-right: 20px;
+  padding: 5px 20px;
+}
+
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .nav-link.show,
+nav .navbar-nav .nav-link:hover {
+  color: var(--cyan-color);
+  border: 2px solid var(--cyan-color);
+}
+
+nav .navbar-brand img,
+nav .navbar-brand .logo-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav .logo-text h4 {
+  color: #fff;
+  margin-bottom: -5px;
+}
+
+nav .logo-text small {
+  color: var(--text-color);
+  font-size: 10px;
+}
+
+/************ Main ************/
+.banner {
+  background-image: url("../imgs/banner.png");
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .search-container input {
+  outline: none;
+  padding: 20px 50px 20px 20px;
+  background-color: var(--bg-body-color);
+  border: none;
+}
+
+.find-btn {
+  padding: 16px 45px;
+  left: 88%;
+  border: none;
+  top: 46%;
+  background-color: var(--cyan-color);
+}
+
+.forecast-container {
+  width: 100%;
+  font-family: AveriaGruesaLibre-Regular;
+}
+
+.forecast-container .forecast .forecast-header {
+  background-color: #2d303d;
+}
+
+.forecast-container .forecast .forecast-content {
+  background-color: #323544;
+}
+
+.forecast .forecast-content h1 {
+  font-size: 90px;
+}
+
+.forecast .forecast-content p:nth-of-type(2) {
+  color: var(--cyan-color);
+  line-height: 21px;
+  margin-bottom: 44px;
+}
+
+.forecast-container .col-md-4:nth-of-type(2) .forecast-header {
+  background-color: #222530;
+}
+
+.forecast-container .col-md-4:nth-of-type(2) .forecast-content {
+  background-color: #262936;
+}
+
+.forecast .forecast-footer {
+  font-size: 14px;
+}
+
+/************ Footer ************/
+footer {
+  background-color: var(--section-bg-color);
+  margin-top: 17rem;
+}
+
+footer .subscribe-container input {
+  outline: none;
+  padding: 20px 50px 20px 20px;
+  background-color: var(--bg-body-color);
+  border: none;
+}
+
+footer .subscribe-container button {
+  padding: 15px 46px;
+  border: none;
+  left: 76%;
+  top: 47%;
+  background-color: var(--cyan-color);
+}
+
+footer .social-icons a {
+  color: var(--cyan-color);
+  background-color: var(--bg-body-color);
+  transition: all 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+  background-color: var(--cyan-color);
+  color: #fff;
+}
+
+footer .copyright {
+  font-size: 14px;
+}
