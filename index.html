@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--  ** Logo File ** -->
+    <link href="./imgs/logo.png" rel="Icon" />
+    <!--  ** Fontawesome File ** -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--  ** Bootstrap File ** -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--  ** Styling File ** -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Weather API</title>
+  </head>
+  <body data-bs-toggle="scroll-spy">
+    <!--*********** Navbar ***********-->
+    <nav class="navbar navbar-expand-md pt-5">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><div>
+            <img
+              src="./imgs/logo.png"
+              alt="Cloud Logo"
+              class="me-2"
+              width="64"
+              height="38"
+            />
+            <div class="logo-text">
+              <h4 class="fw-bolder">Weather</h4>
+              <small>tagline goes here</small>
+            </div>
+          </div></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#live">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#photos">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact.html" target="_blank"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--*********** Main ***********-->
+    <div class="banner">
+      <main class="container">
+        <form class="search-container w-100 pt-5 position-relative">
+          <input
+            type="search"
+            placeholder="Find your location..."
+            class="rounded-5 w-100 text-white"
+          />
+          <button
+            class="find-btn text-white position-absolute rounded-5"
+            type="submit"
+          >
+            Find
+          </button>
+        </form>
+        <div class="forecast-container py-5">
+          <div class="row gx-0 gy-0">
+            <div class="col-md-4">
+              <div class="forecast py-2">
+                <div
+                  class="forecast-header d-flex justify-content-between pt-2 px-2"
+                >
+                  <p>Wednesday</p>
+                  <p>12 December</p>
+                </div>
+                <div class="forecast-content py-4 px-4">
+                  <p>Alexandria</p>
+                  <h1 class="fw-bolder text-white">14.2<sup>o</sup>C</h1>
+                  <div class="icon">
+                    <img src="./imgs/248.webp" alt="" width="90" />
+                  </div>
+                  <p class="mb-4">Fog</p>
+                  <div class="forecast-footer d-flex justify-content-evenly">
+                    <span
+                      ><img
+                        src="./imgs/umbrella.png"
+                        width="23px"
+                        alt="umbrella"
+                        class="me-1"
+                      />20%</span
+                    >
+                    <span
+                      ><img
+                        src="./imgs/wind.png"
+                        width="23px"
+                        alt="wind"
+                        class="me-1"
+                      />18km/h</span
+                    >
+                    <span
+                      ><img
+                        src="./imgs/compass.png"
+                        width="23px"
+                        alt="compass"
+                        class="me-1"
+                      />East</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="forecast py-2">
+                <div class="forecast-header text-center py-1 px-2">
+                  <p>Thursday</p>
+                </div>
+                <div
+                  class="forecast-content py-4 px-4 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="mb-5 my-3">
+                    <img
+                      src="./imgs/partlySunny.png"
+                      alt="Partly Cloudy"
+                      width="60"
+                    />
+                  </div>
+                  <h4 class="fw-bolder text-white">23.9<sup>o</sup>C</h4>
+                  <p>14.8<sup>o</sup>C</p>
+                  <p class="pb-5">Partly Cloudy</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="forecast py-2">
+                <div class="forecast-header text-center py-1 px-2">
+                  <p>Friday</p>
+                </div>
+                <div
+                  class="forecast-content py-4 px-4 d-flex flex-column justify-content-center align-items-center"
+                >
+                  <div class="mb-5 my-3">
+                    <img src="./imgs/sunny.png" alt="Sunny" width="60" />
+                  </div>
+                  <h4 class="fw-bolder text-white">23<sup>o</sup>C</h4>
+                  <p>14.2<sup>o</sup>C</p>
+                  <p class="pb-5">Sunny</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!--*********** Footer ***********-->
+    <footer>
+      <main class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form class="subscribe-container position-relative pt-5 w-100">
+              <input
+                type="text"
+                placeholder="Enter your email to subscribe..."
+                class="w-100 rounded-5 text-white"
+              />
+              <button
+                type="submit"
+                class="position-absolute text-white rounded-5"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <div
+              class="social-icons d-flex justify-content-evenly align-items-center pt-5 ps-5"
+            >
+              <a
+                href="https://www.facebook.com/"
+                class="d-flex justify-content-center align-items-center p-3 rounded-circle"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://x.com/"
+                class="d-flex justify-content-center align-items-center p-3 rounded-circle"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.google.com/"
+                class="d-flex justify-content-center align-items-center p-3 rounded-circle"
+                ><i class="fa-brands fa-google"></i
+              ></a>
+              <a
+                href="https://www.pinterest.com/"
+                class="d-flex justify-content-center align-items-center p-3 rounded-circle"
+                ><i class="fa-brands fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <p class="copyright my-4 pb-5">
+          Copyright 2024. Designed by Lujaina Walid. All rights reserved
+        </p>
+      </main>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
