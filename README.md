@@ -66,6 +66,5 @@ weather-forecast-app/
 
 ## Credits
 - Weather data powered by [WeatherAPI](https://www.weatherapi.com/).
-- Design inspired by modern weather apps.
 
 
