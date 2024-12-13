@@ -199,6 +199,18 @@ nav .navbar-toggler:hover {
   font-size: 14px;
 }
 
+@media (max-width: 765px) {
+  .find-btn {
+    left: 72%;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  .find-btn {
+    left: 82%;
+  }
+}
+
 /************ Footer ************/
 footer {
   background-color: var(--section-bg-color);
@@ -240,5 +252,15 @@ footer .copyright {
 @media (max-width: 765px) {
   footer {
     margin-top: 68rem;
+  }
+
+  footer .subscribe-container button {
+    left: 63%;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 991px) {
+  footer .subscribe-container button {
+    left: 63%;
   }
 }
