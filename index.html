@@ -60,9 +60,7 @@
               <a class="nav-link" href="#photos">Photos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/contact.html" target="_blank"
-                >Contact</a
-              >
+              <a class="nav-link" href="./pages/contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -75,10 +73,12 @@
         <form class="search-container w-100 pt-5 position-relative">
           <input
             type="search"
+            id="searchInput"
             placeholder="Find your location..."
             class="rounded-5 w-100 text-white"
           />
           <button
+            id="findBtn"
             class="find-btn text-white position-absolute rounded-5"
             type="submit"
           >
@@ -86,7 +86,8 @@
           </button>
         </form>
         <div class="forecast-container py-5">
-          <div class="row gx-0 gy-0">
+          <div id="forecastContainer" class="row gx-0 gy-0">
+            <!-- Today -->
             <div class="col-md-4">
               <div class="forecast py-2">
                 <div
@@ -132,6 +133,7 @@
               </div>
             </div>
 
+            <!-- Tomorrow -->
             <div class="col-md-4">
               <div class="forecast py-2">
                 <div class="forecast-header text-center py-1 px-2">
@@ -154,6 +156,7 @@
               </div>
             </div>
 
+            <!-- After Tomorrow -->
             <div class="col-md-4">
               <div class="forecast py-2">
                 <div class="forecast-header text-center py-1 px-2">
