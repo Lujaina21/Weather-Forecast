@@ -1,4 +1,4 @@
-# Weather Forecast Application
+# Weather Forecast Application ⛅
 
 ## Overview
 This Weather Forecast Application is a web-based tool that provides accurate and up-to-date weather information for any city in the world. Users can view a three-day weather forecast with details such as temperature, humidity, wind speed, and more. The application fetches data dynamically as the user types a city name in the search field, ensuring a seamless and interactive experience.
