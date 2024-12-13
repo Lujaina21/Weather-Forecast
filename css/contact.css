@@ -29,7 +29,8 @@
 
 /*==================== General Styling ====================*/
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -98,13 +99,15 @@ nav .logo-text small {
 
 nav .navbar-toggler {
   border: 2px solid transparent;
-  box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
 }
 
 nav .navbar-toggler:focus,
 nav .navbar-toggler:hover {
   border-color: var(--cyan-color);
-  box-shadow: 0 0 0 transparent;
+  -webkit-box-shadow: 0 0 0 transparent;
+          box-shadow: 0 0 0 transparent;
 }
 
 @media (max-width: 991px) {
@@ -235,6 +238,8 @@ footer .subscribe-container button {
 footer .social-icons a {
   color: var(--cyan-color);
   background-color: var(--bg-body-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -246,4 +251,3 @@ footer .social-icons a:hover {
 footer .copyright {
   font-size: 14px;
 }
-
